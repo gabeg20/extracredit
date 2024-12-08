@@ -1,0 +1,249 @@
+/*
+    Program name: style.css
+    Author: Gabriel Garcia
+    Date created: 9/18
+    Date last edited: 11/30
+    Version: 5.0
+    Description: Styles for Patient Registration Form for Health Connect Clinic.
+*/
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+    padding-top: 220px;    /* Equal to header height */
+    padding-bottom: 120px; /* Equal to footer height */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21618c;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+#reviewSection {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f8ff;
+    z-index: 1000;
+    height: 220px; /* Adjust based on banner and title height */
+}
+
+header .banner-container {
+    position: relative;
+    width: 100%;
+    height: 120px; /* Banner height */
+}
+
+header .banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f8ff;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    height: 80px; /* Remaining height after banner */
+    margin: 0;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px; /* Adjust for alignment */
+    left: 10px; /* Keep the logo aligned to the left */
+    max-width: 100px; /* Restrict the overall size */
+}
+
+.logo {
+    max-width: 100%; /* Ensure the logo fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
+}
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* Iframe Container */
+.iframe-container {
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form table {
+    width: 100%;
+}
+
+form td {
+    padding: 10px;
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+/* Slider Value Display */
+#sliderValue {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+/* Fixed Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px; /* Adjust based on footer content */
+    background-color: #f0f8ff;
+    z-index: 1000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer button {
+    margin-bottom: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #21618c;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    vertical-align: middle;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Link Styles */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #8e44ad;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+        padding: 15px 0;
+    }
+
+    .logo {
+        height: 50px; /* Adjusted for smaller screens */
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    footer button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .social-media a {
+        margin: 0 5px;
+    }
+}
